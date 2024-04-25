@@ -11,6 +11,8 @@
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 /* Swap two variables (ANSI-compatible) */
 #define SWAP(a, b, t) ((t) = (a), (a) = (b), (b) = (t))
+/* Linear interpolate between two values */
+#define LERP(a, b, t) ((a) + ((b) - (a)) * (t))
 /* Get an index of an array from an x and a y */
 #define INDEX_XY(x, y, w) ((y) * (w) + (x))
 /* Stringify */
