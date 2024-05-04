@@ -29,15 +29,17 @@ typedef enum month_t {
   JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER,
   OCTOBER, NOVEMBER, DECEMBER
 } month_t;
+/* Graphics API */
+typedef enum graphics_api_t {
+  OPENGL, VULKAN, NOAPI
+} graphics_api_t;
 /* STRUCTS */
-#if !defined (NO_TIME_T)
 /* Time of day */
-typedef struct time_t {
+typedef struct timestamp_t {
   u8 hour;
   u8 minute;
   u8 second;
 } time_t;
-#endif /* NO_TIME_T */
 /* Date */
 typedef struct date_t {
   u16 year;

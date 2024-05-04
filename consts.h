@@ -2,9 +2,6 @@
 #if !defined(HEADERS_CONSTS_H)
 #define HEADERS_CONSTS_H
 
-/* Project headers */
-#include "types.h"
-
 /* Mathematical constants */
 #define C_PI        3.14159265358979323846f   /* Pi */
 #define C_E         2.71828182845904523536f   /* Euler's number */

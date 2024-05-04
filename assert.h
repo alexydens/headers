@@ -4,9 +4,9 @@
 
 /* Assertions, with no libc */
 #if defined(DEBUG)
-  #define assert(x) if (!(x)) { *(int *)0 = 0; }
+  #define ASSERT(EXPR) if (!(EXPR)) { *(int *)0 = 0; }
 #else
-  #define assert(x)
+  #define ASSERT(EXPR)
 #endif /* DEBUG */
 
 #endif /* HEADERS_ASSERT_H */
