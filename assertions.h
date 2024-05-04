@@ -6,7 +6,7 @@
 #if defined(DEBUG)
   #define ASSERT(EXPR) if (!(EXPR)) { *(int *)0 = 0; }
 #else
-  #define ASSERT(EXPR) (void)EXPR
+  #define ASSERT(EXPR) (void)(EXPR)
 #endif /* DEBUG */
 
 #endif /* HEADERS_ASSERT_H */
