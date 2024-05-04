@@ -39,7 +39,7 @@ typedef struct timestamp_t {
   u8 hour;
   u8 minute;
   u8 second;
-} time_t;
+} timestamp_t;
 /* Date */
 typedef struct date_t {
   u16 year;
